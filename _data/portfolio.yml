@@ -1,0 +1,27 @@
+#site settings
+title: Inktober '14
+email: edith.mehle@gmail.com
+description: Inktober art challenge 2014
+
+#the avatar and the bg image are defined in the main.sass document.
+
+# background-image: 'damask.png'
+
+#-------------------------
+# Work Section
+
+projects:
+- {name: God save the Queen, folder: 'day1', htmlsite: 'work1.html'}
+- {name: Tally, folder: 'day2', htmlsite: 'work2.html'}
+- {name: Shay, folder: 'day3', htmlsite: 'work3.html'}
+- {name: Random Destruction, folder: 'day4', htmlsite: 'work4.html'}
+- {name: Dinner Date, folder: 'day5', htmlsite: 'work5.html'}
+- {name: 8r8k h34ds, folder: 'day6', htmlsite: 'work6.html'}
+- {name: Wirbelwind, folder: 'day7', htmlsite: 'work7.html'}
+- {name: Melodeath, folder: 'day8', htmlsite: 'work8.html'}
+
+
+# Change the site default images and content here
+
+avatar: 'plans.jpg'
+blurb: <p><strong>Everything is ink and everything hurts.</strong> Or how I decided to join this madness and didn't keep up with it for more than two days. Alternatively an exercise in obscure fandoms you never knew I'm a part of. A blog of many names. Actually it's just a doodle dump, but you didn't hear that from <a href="http://elany.tumblr.com">me</a>.</p>

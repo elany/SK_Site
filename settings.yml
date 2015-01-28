@@ -1,0 +1,12 @@
+#-------------------------
+# Work Section
+
+projects
+- name{name: God save the Queen, folder: 'day1/thumb1.jpg'}
+- name{name: Tally, folder: 'day2/thumb2.jpg'}
+- name{name: Melody, folder: 'day3/thumb3.jpg'}
+- name{name: Shay, folder: 'day4/thumb4.jpg'}
+- name{name: 8r8k h34ds, folder: 'day5/thumb5.jpg'}
+- name{name: Wirbelwind, folder: 'day6/thumb6.jpg'}
+- name{name: Random Destruction, folder: 'day7/thumb7.jpg'}
+- name{name: Dinner Date, folder: 'day8/thumb8.jpg'}

@@ -1,0 +1,101 @@
+section1	
+	margin: 30px
+	height: 400px
+
+	.face-lockup
+		max-width: 780px
+		+display(flex)
+		margin: 0 auto
+		text-align: center
+		+align-items(center)
+		+justify-content(space-around)
+
+		.face-img
+			+size(200px)
+			border-radius: 50%
+			background-image: url(/assets/img/#{$avatar-path})
+			float: left
+			margin: 10px
+
+			@media only screen and (max-width: 720px)
+				margin: 100px auto auto auto
+				float: none
+
+			@media only screen and (max-width: 610px)
+				margin: 100px auto auto auto
+				float: none
+
+		[class^="icon-"]
+			+size(100px)
+			background: $bgcolour
+			border-radius: 50%
+			margin: 55px 10px 0 10px
+
+			path
+				fill: #524844
+				padding-top: 20px
+			float: left
+
+			@media only screen and (max-width: 720px)
+				margin: auto 100px auto 100px
+
+			@media only screen and (max-width: 610px)
+				margin: 0 5px 0 5px
+
+/* @media screen and (max-width: 780px)
+	.face-lockup
+		display: block
+		text-align: center
+
+		div
+			display: inline-block
+
+		.face-img
+			display: block
+			background-position: center center
+			background-repeat: no-repeat
+			width: auto */
+
+.blurb
+	max-width: 600px
+	padding: 0 10px 0 10px
+	margin: 50px auto
+	font-size: 18px
+	text-align: center
+	color: #524844
+
+.skill-lockup
+	max-width: 700px
+	margin: 100px auto
+	color: #726864
+	text-align: center
+	+clearfix
+
+	.skill-unit
+		width: 700px
+		float: left
+
+	.skill-icon
+
+		span
+			display: inline-block
+			+size(16px)
+			background-color: $accent
+			margin-right: 2px
+			margin-top: 5px
+			border-radius: 50%
+
+			&:after
+				content: ''
+				display: block
+				+size(12px)
+				background: #F6F6F8
+				margin: 2px
+				border-radius: 50%
+
+		@for $i from 1 through 31
+			&.skill-#{$i} span:nth-child(n+#{$i})
+				background: $bgcolour
+
+	@media only screen and (max-width: 720px)
+		display: none

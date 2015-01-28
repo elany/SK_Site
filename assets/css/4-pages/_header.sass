@@ -1,0 +1,93 @@
+header
+	height: 427px
+	background-image: url(/assets/img/#{$hero-path})
+	background-size: cover
+
+	.logo
+		+size(50px)
+		float: left
+		margin: 20px 0 0 30px
+
+		path
+			fill: rgba(25,18,18,0.7)
+
+	nav ul li ul
+		position: absolute
+		top: 80px
+		right: 0px
+		display: none
+		visibility: hidden
+
+	nav ul li ul li
+		background: #292020
+		display: block
+		color: white
+		text-align: left
+
+	nav ul li ul li:hover
+		background: #393030
+
+	nav ul li:hover ul
+		display: block
+		opacity: 1
+		visibility: visible
+
+	nav ul li
+		background-color: #292020
+		padding: 30px 45px 30px 15px
+		height: 20px
+		width: 20px
+		border-radius: 200px
+		position: relative
+		list-style: none
+		text-align: center
+
+		@include transition(background .3s ease)
+
+		&:hover
+			color: white
+			background: rgba(39,30,30,0.8)
+
+	nav
+		float: right
+		margin: 7px 30px 0 0
+
+		a
+			display: block
+			color: white
+
+			@extend %smallbold
+
+			&:hover
+				color: #fff
+
+	h2
+		text-align: center
+		font:
+			size: 5.14em
+			weight: 700
+		text-transform: uppercase
+		color: #292020
+		letter-spacing: 0.05em
+		margin-bottom: 20px
+		clear: both
+		padding-top: 60px
+
+		@media only screen and (max-width: 490px)
+			font-size: 13vw
+
+		span
+			display: inline-block
+			padding: 0.2em
+			border: 10px solid #292020
+			background-color: rgba(400,400,400,0.5)
+
+
+	.kicker
+		text-align: center
+		@extend %smallbold
+		color: #251818
+		text-transform: uppercase
+		letter-spacing: 0.05em
+		line-height: 1
+
